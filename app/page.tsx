@@ -598,14 +598,15 @@ export default function FitnessCoachPage() {
           font-family:var(--fb); font-size:.875rem; line-height:1.65;
           color:var(--muted); max-width:420px;
         }
-        .quick-list { display:flex; flex-wrap:wrap; gap:8px; padding-top:4px; }
+        .quick-list { display:flex; flex-direction:column; gap:8px; padding-top:4px; width:100%; max-width:460px; }
         .qbtn {
-          font-family:var(--fb); font-size:.78rem; font-weight:500;
-          padding:8px 16px; border-radius:999px;
-          border:1px solid var(--bdr); background:var(--bg); color:var(--text);
-          cursor:pointer; transition:border-color .15s,color .15s,background .15s;
+          font-family:var(--fb); font-size:.875rem; font-weight:400;
+          padding:14px 18px; border-radius:10px; text-align:left;
+          border:1px solid var(--bdr); background:#1a1a19; color:var(--text);
+          cursor:pointer; transition:border-color .15s,background .15s;
+          width:100%;
         }
-        .qbtn:hover { border-color:var(--acc); color:var(--acc); background:rgba(34,197,94,.08); }
+        .qbtn:hover { border-color:var(--acc); background:#1f2e23; }
 
         /* Message rows */
         .mrow {
